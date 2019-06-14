@@ -5,8 +5,10 @@ print("Enter domain (like google.com):")
 domain = input()
 print("Enter page (like /search):")
 page = input()
-print("Iterations range: (like 10 or 1000):")
+print("Enter iterations range (like 10 or 5000):")
 count = int(input())
+print("Enter delay in sec (like 0.1 or 5):")
+delay = float(input())
 
 if domain is None or page is None or count is None:
     exit()
@@ -28,4 +30,4 @@ for i in tqdm.tqdm(range(count)):
         print("Error " + res.status)
         break
     conn.close()
-    sleep(0.1)
+    sleep(delay)
