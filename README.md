@@ -3,6 +3,8 @@ Simple script co create multiple HTTP GET requests. Can be useful in simple chea
 
 ## Usage 
 
+precompiled for Unix systems
+
 run **script.py** from **/dist.zip/script** folder
 
 * Type domain

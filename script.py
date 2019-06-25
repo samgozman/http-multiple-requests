@@ -29,5 +29,6 @@ for i in tqdm.tqdm(range(count)):
     if res.status != 200:
         print("Error " + res.status)
         break
-    conn.close()
     sleep(delay)
+    conn.close()
+    
