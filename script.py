@@ -27,8 +27,7 @@ for i in tqdm.tqdm(range(count)):
     conn.request("GET", page, headers=headers)
     res = conn.getresponse()
     if res.status != 200:
-        print("Error " + res.status)
-        break
+        print("Error №" + str(res.status) + " on " + str(domain))
     sleep(delay)
     conn.close()
     
